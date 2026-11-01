@@ -1,0 +1,5 @@
+ws/
+.venv/
+.venv-mcp/
+__pycache__/
+.env

@@ -1,0 +1,22 @@
+diff --git a/robots/configs/go2_config/config/rl/policy.yaml b/robots/configs/go2_config/config/rl/policy.yaml
+index 0866275..fa1fe11 100644
+--- a/robots/configs/go2_config/config/rl/policy.yaml
++++ b/robots/configs/go2_config/config/rl/policy.yaml
+@@ -10,7 +10,7 @@ rl_policy_node:
+     device: "cpu"
+ 
+     # agent.yaml -> policy.actor_hidden_dims / activation
+-    hidden_dims: [512, 256, 128]
++    hidden_dims: [128, 128, 128]
+     activation: "elu"
+ 
+     # env.yaml -> sim.dt 0.005 * decimation 4 = 50 Hz policy step.
+@@ -60,7 +60,7 @@ rl_policy_node:
+     #
+     # -0.10 corresponds to the 0.40 m base height this policy actually walks at, measured
+     # from /odom_ground_truth in the default world. Re-measure if you retrain.
+-    height_scan_dim: 187
++    height_scan_dim: 0
+     height_scan_constant: -0.10
+ 
+     # env.yaml -> commands.base_velocity.ranges. The policy never saw commands outside

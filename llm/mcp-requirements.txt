@@ -1,0 +1,2 @@
+# 両venvで共有する。ros-mcp 3.1.2 / FastMCP 2.14.7 / Agents 0.24.0の共通範囲。
+mcp==1.30.0
